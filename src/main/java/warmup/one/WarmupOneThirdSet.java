@@ -34,4 +34,20 @@ public class WarmupOneThirdSet {
 
         return a < 0 && b > 0 || a > 0 && b < 0 ;
     }
+
+    /**
+     * Given a string, return new string where "not" has been added to the front. However, if
+     * the string already begins with "not", return the string unchanged. Note: use .equals() to
+     * compare two strings.
+     *
+     * @param str
+     * @return String
+     */
+    public String notString(String str) {
+        if (str.startsWith("not")) {
+            return str;
+        }
+
+        return "not ".concat(str);
+    }
 }

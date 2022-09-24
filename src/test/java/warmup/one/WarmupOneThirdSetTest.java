@@ -216,4 +216,34 @@ class WarmupOneThirdSetTest {
         assertThat(warmupOneThirdSet.posNeg(1, 2, false))
                 .isFalse();
     }
+
+
+    /** notString */
+    @Test
+    void givenAStringWithoutNot_whenNotString_thenReturnStringWithNot() {
+        assertThat(warmupOneThirdSet.notString("candy"))
+                .isEqualTo("not candy");
+
+        assertThat(warmupOneThirdSet.notString("x"))
+                .isEqualTo("not x");
+
+        assertThat(warmupOneThirdSet.notString("bad"))
+                .isEqualTo("not bad");
+
+        assertThat(warmupOneThirdSet.notString("is not"))
+                .isEqualTo("not is not");
+
+        assertThat(warmupOneThirdSet.notString("no"))
+                .isEqualTo("not no");
+    }
+
+    @Test
+    void givenAStringWithNot_whenNotString_thenReturnTheSameString() {
+        var actual = warmupOneThirdSet.notString("not bad");
+        assertThat(actual)
+                .isEqualTo("not bad");
+
+        assertThat(warmupOneThirdSet.notString("not"))
+                .isEqualTo("not");
+    }
 }
