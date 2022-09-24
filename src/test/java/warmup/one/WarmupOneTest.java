@@ -3,8 +3,7 @@ package warmup.one;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class WarmupOneTest {
     private WarmupOne warmupOne;
@@ -62,5 +61,37 @@ class WarmupOneTest {
     void givenNotASmileAndBSmile_whenMonkeyTrouble_thenReturnFalse() {
         var actual = warmupOne.monkeyTrouble(false, true);
         assertFalse(actual);
+    }
+
+
+    /** sumDouble */
+    @Test
+    void givenTwoDifferentNumbers_whenSumDouble_thenReturnSumOfTwoNumbers() {
+        var actual = warmupOne.sumDouble(1, 2);
+        assertEquals(3, actual);
+
+        actual = warmupOne.sumDouble(3, 2);
+        assertEquals(5, actual);
+
+        actual = warmupOne.sumDouble(-1, 0);
+        assertEquals(-1, actual);
+
+        actual = warmupOne.sumDouble(0, 1);
+        assertEquals(1, actual);
+
+        actual = warmupOne.sumDouble(3, 4);
+        assertEquals(7, actual);
+    }
+
+    @Test
+    void givenTheSameNumber_whenSumDouble_thenReturnDoubleTheirSum() {
+        var actual = warmupOne.sumDouble(2, 2);
+        assertEquals(8, actual);
+
+        actual = warmupOne.sumDouble(3, 3);
+        assertEquals(12, actual);
+
+        actual = warmupOne.sumDouble(0, 0);
+        assertEquals(0, actual);
     }
 }
