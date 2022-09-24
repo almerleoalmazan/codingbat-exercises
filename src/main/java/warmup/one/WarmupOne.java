@@ -64,4 +64,15 @@ public class WarmupOne {
     public boolean parrotTrouble(boolean talking, int hour) {
         return talking && (hour < 7 || hour > 20);
     }
+
+    /**
+     * Given 2 ints, a and b, return true if one of them is 10 or if their sum is 10.
+     *
+     * @param a
+     * @param b
+     * @return boolean
+     */
+    public boolean makes10(int a, int b) {
+        return a == 10 || b == 10 || (a+b) == 10;
+    }
 }

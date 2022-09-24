@@ -263,4 +263,69 @@ class WarmupOneTest {
         assertThat(actual)
                 .isFalse();
     }
+
+
+    /** makes10 */
+    @Test
+    void givenNineAndTen_whenMakes10_thenReturnTrue() {
+        var actual = warmupOne.makes10(9, 10);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenNineAndNine_whenMakes10_thenReturnFalse() {
+        var actual = warmupOne.makes10(9, 9);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenOneAndNine_whenMakes10_thenReturnTrue() {
+        var actual = warmupOne.makes10(1, 9);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenTenAndOne_whenMakes10_thenReturnTrue() {
+        var actual = warmupOne.makes10(10, 1);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenTenAndTen_whenMakes10_thenReturnTrue() {
+        var actual = warmupOne.makes10(10, 10);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenEightAndTwo_whenMakes10_thenReturnTrue() {
+        var actual = warmupOne.makes10(8, 2);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenEightAndThree_whenMakes10_thenReturnFalse() {
+        var actual = warmupOne.makes10(8, 3);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenTenAndFortyTwo_whenMakes10_thenReturnTrue() {
+        var actual = warmupOne.makes10(10, 42);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenTwelveAndNegativeTwo_whenMakes10_thenReturnTrue() {
+        var actual = warmupOne.makes10(12, -2);
+        assertThat(actual)
+                .isTrue();
+    }
 }
