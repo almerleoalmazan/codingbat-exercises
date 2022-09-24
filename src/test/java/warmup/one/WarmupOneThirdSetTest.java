@@ -139,4 +139,81 @@ class WarmupOneThirdSetTest {
         assertThat(actual)
                 .isFalse();
     }
+
+
+    /** posNeg */
+    @Test
+    void givenOneNegativeOfTwoNumbersAndFalse_whenPosNeg_thenReturnTrue() {
+        assertThat(warmupOneThirdSet.posNeg(1, -1, false))
+                .isTrue();
+
+        assertThat(warmupOneThirdSet.posNeg(-1, 1, false))
+                .isTrue();
+
+        assertThat(warmupOneThirdSet.posNeg(-4, 5, false))
+                .isTrue();
+
+        assertThat(warmupOneThirdSet.posNeg(5, -5, false))
+                .isTrue();
+
+        assertThat(warmupOneThirdSet.posNeg(-6, 6, false))
+                .isTrue();
+    }
+
+    @Test
+    void givenOneNegativeOfTwoNumbersAndTrue_whenPosNeg_thenReturnFalse() {
+        assertThat(warmupOneThirdSet.posNeg(-4, 5, true))
+                .isFalse();
+
+        assertThat(warmupOneThirdSet.posNeg(1, -1, true))
+                .isFalse();
+
+        assertThat(warmupOneThirdSet.posNeg(-1, 1, true))
+                .isFalse();
+
+        assertThat(warmupOneThirdSet.posNeg(-5, 6, true))
+                .isFalse();
+    }
+
+    @Test
+    void givenSameNegativeNumbersAndTrue_whenPosNeg_thenReturnTrue() {
+        assertThat(warmupOneThirdSet.posNeg(-4, -5, true))
+                .isTrue();
+
+        assertThat(warmupOneThirdSet.posNeg(-1, -1, true))
+                .isTrue();
+
+        assertThat(warmupOneThirdSet.posNeg(-5, -5, true))
+                .isTrue();
+    }
+
+    @Test
+    void givenSameNegativeNumbersAndFalse_whenPosNeg_thenReturnFalse() {
+        assertThat(warmupOneThirdSet.posNeg(-4, -5, false))
+                .isFalse();
+
+        assertThat(warmupOneThirdSet.posNeg(-1, -1, false))
+                .isFalse();
+
+        assertThat(warmupOneThirdSet.posNeg(-5, -6, false))
+                .isFalse();
+
+        assertThat(warmupOneThirdSet.posNeg(-2, -1, false))
+                .isFalse();
+    }
+
+    @Test
+    void givenSamePositiveNumbersAndTrue_whenPosNeg_thenReturnFalse() {
+        assertThat(warmupOneThirdSet.posNeg(1, 1, true))
+                .isFalse();
+    }
+
+    @Test
+    void givenSamePositiveNumbersAndFalse_whenPosNeg_thenReturnFalse() {
+        assertThat(warmupOneThirdSet.posNeg(1, 1, false))
+                .isFalse();
+
+        assertThat(warmupOneThirdSet.posNeg(1, 2, false))
+                .isFalse();
+    }
 }

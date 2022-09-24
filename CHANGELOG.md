@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Warmup-1 parrotTrouble
 - Warmup-1 makes10
 - Warmup-1 nearHundred
+- Warmup-1 posNeg
 
 ### Changed
 - Add AssertJ for fluent and rich assertions in Java tests
