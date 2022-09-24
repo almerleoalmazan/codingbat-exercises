@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Warmup-1 monkeyTrouble
 - Warmup-1 sumDouble
 - Warmup-1 diff21
+- Warmup-1 parrotTrouble
 
 ### Changed
 - Add AssertJ for fluent and rich assertions in Java tests

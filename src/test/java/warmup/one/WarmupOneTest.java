@@ -191,4 +191,76 @@ class WarmupOneTest {
         assertThat(actual)
                 .isEqualTo(58);
     }
+
+
+    /** parrotTrouble */
+    @Test
+    void givenTrueAndSix_whenParrotTrouble_thenReturnTrue() {
+        var actual = warmupOne.parrotTrouble(true, 6);
+        assertThat(actual)
+                .isTrue();
+    }
+    
+    @Test
+    void givenTrueAndSeven_whenParrotTrouble_thenReturnFalse() {
+        var actual = warmupOne.parrotTrouble(true, 7);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenFalseAndSix_whenParrotTrouble_thenReturnFalse() {
+        var actual = warmupOne.parrotTrouble(false, 6);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenTrueAndTwentyOne_whenParrotTrouble_thenReturnTrue() {
+        var actual = warmupOne.parrotTrouble(true, 21);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenFalseAndTwentyOne_whenParrotTrouble_thenReturnFalse() {
+        var actual = warmupOne.parrotTrouble(false, 21);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenFalseAndTwenty_whenParrotTrouble_thenReturnFalse() {
+        var actual = warmupOne.parrotTrouble(false, 20);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenTrueAndTwentyThree_whenParrotTrouble_thenReturnTrue() {
+        var actual = warmupOne.parrotTrouble(true, 23);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenFalseAndTwentyThree_whenParrotTrouble_thenReturnFalse() {
+        var actual = warmupOne.parrotTrouble(false, 23);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenTrueAndTwenty_whenParrotTrouble_thenReturnFalse() {
+        var actual = warmupOne.parrotTrouble(true, 20);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenFalseAndTwelve_whenParrotTrouble_thenReturnFalse() {
+        var actual = warmupOne.parrotTrouble(false, 12);
+        assertThat(actual)
+                .isFalse();
+    }
 }
