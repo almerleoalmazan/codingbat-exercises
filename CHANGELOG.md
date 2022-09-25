@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Warmup-1 missingChar
 - Warmup-1 frontBack
+- Warmup-1 front3
 
 ## [1.0.0] - 2022-09-24
 ### Added
