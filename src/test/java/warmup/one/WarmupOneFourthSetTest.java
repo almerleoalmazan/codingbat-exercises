@@ -65,4 +65,44 @@ public class WarmupOneFourthSetTest {
         assertThat(actual)
                 .isEqualTo("chocolat");
     }
+
+
+    /** frontBack */
+    @Test
+    void givenTwoOrMoreCharacterString_whenFrontBack_thenReturnReversFirstAndLastString() {
+        var actual = warmupOneFourthSet.frontBack("code");
+        assertThat(actual)
+                .isEqualTo("eodc");
+
+        actual = warmupOneFourthSet.frontBack("ab");
+        assertThat(actual)
+                .isEqualTo("ba");
+
+        actual = warmupOneFourthSet.frontBack("abc");
+        assertThat(actual)
+                .isEqualTo("cba");
+
+        actual = warmupOneFourthSet.frontBack("Chocolate");
+        assertThat(actual)
+                .isEqualTo("ehocolatC");
+
+        actual = warmupOneFourthSet.frontBack("aavJ");
+        assertThat(actual)
+                .isEqualTo("Java");
+
+        actual = warmupOneFourthSet.frontBack("hello");
+        assertThat(actual)
+                .isEqualTo("oellh");
+    }
+
+    @Test
+    void givenEmptyOrSingleCharacterString_whenFrontBack_thenReturnOriginalString() {
+        var actual = warmupOneFourthSet.frontBack("");
+        assertThat(actual)
+                .isEqualTo("");
+
+        actual = warmupOneFourthSet.frontBack("a");
+        assertThat(actual)
+                .isEqualTo("a");
+    }
 }
