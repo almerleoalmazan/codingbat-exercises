@@ -127,4 +127,40 @@ public class WarmupOneFifthSetTest {
         assertThat(actual)
                 .isFalse();
     }
+
+
+    /** front22 */
+    @Test
+    void givenStringWithLessThanTwoCharacter_whenFront22_thenReturnTheStringPrependedAndAppendedWithOriginalString() {
+        var actual = warmupOneFifthSet.front22("a");
+        assertThat(actual)
+                .isEqualTo("aaa");
+
+        actual = warmupOneFifthSet.front22("");
+        assertThat(actual)
+                .isEqualTo("");
+    }
+
+    @Test
+    void givenStringWithTwoOrMoreCharacters_whenFront22_thenReturnTheStringPrependedAndAppendedWithOriginalString() {
+        var actual = warmupOneFifthSet.front22("kitten");
+        assertThat(actual)
+                .isEqualTo("kikittenki");
+
+        actual = warmupOneFifthSet.front22("Ha");
+        assertThat(actual)
+                .isEqualTo("HaHaHa");
+
+        actual = warmupOneFifthSet.front22("abc");
+        assertThat(actual)
+                .isEqualTo("ababcab");
+
+        actual = warmupOneFifthSet.front22("ab");
+        assertThat(actual)
+                .isEqualTo("ababab");
+
+        actual = warmupOneFifthSet.front22("Logic");
+        assertThat(actual)
+                .isEqualTo("LoLogicLo");
+    }
 }
