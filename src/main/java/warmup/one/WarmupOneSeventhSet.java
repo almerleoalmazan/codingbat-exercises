@@ -22,4 +22,20 @@ public class WarmupOneSeventhSet {
 
         return c > 12 && c < 20;
     }
+
+    /**
+     * We'll say that a number is "teen" if it is in the range of 13..19 inclusive. Given 2 int values,
+     * return true if one or the other is teen, but not both.
+     *
+     * @param a
+     * @param b
+     * @return boolean
+     */
+    public boolean loneTeen(int a, int b) {
+        if (a > 12 && a < 20 && !(b > 12 && b < 20)) {
+            return true;
+        }
+
+        return b > 12 && b < 20 && !(a > 12 && a < 20);
+    }
 }

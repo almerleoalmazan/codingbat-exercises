@@ -1,6 +1,7 @@
 package warmup.one;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -68,5 +69,36 @@ public class WarmupOneSeventhSetTest {
         var actual = warmupOneSeventhSet.hasTeen(12, 18, 20);
         assertThat(actual)
                 .isTrue();
+    }
+    
+    
+    /** loneTeen */
+    @Test
+    void givenThirteenAndNinetyNine_whenLoneTeen_thenReturnTrue() {
+        var actual = warmupOneSeventhSet.loneTeen(13, 99);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenTwentyOneAndNineteen_whenLoneTeen_thenReturnTrue() {
+        var actual = warmupOneSeventhSet.loneTeen(21, 19);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenThirteenAndThirteen_whenLoneTeen_thenReturnFalse() {
+        var actual = warmupOneSeventhSet.loneTeen(13, 13);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    @Disabled
+    void givenNinetyNineAndNinetyNine_whenLoneTeen_thenReturnFalse() {
+        var actual = warmupOneSeventhSet.loneTeen(99, 99);
+        assertThat(actual)
+                .isFalse();
     }
 }
