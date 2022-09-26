@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Warmup-1 icyHot
 - Warmup-1 in1020
+- Warmup-1 hasTeen
  
 ## [1.1.0] - 2022-09-25
 ### Added
