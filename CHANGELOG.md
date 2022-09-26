@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.1] - 2022-09-25
+## [1.1.0] - 2022-09-25
 ### Added
 - Warmup-1 missingChar
 - Warmup-1 frontBack
@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Warmup-1 backAround
 - Warmup-1 or35
 - Warmup-1 front22
+- Warmup-1 startHi
 
 ## [1.0.0] - 2022-09-24
 ### Added
