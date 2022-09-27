@@ -48,4 +48,55 @@ public class WarmupOneEightSetTest {
         assertThat(actual)
                 .isFalse();
     }
+
+
+    /** startOz */
+    @Test
+    void givenOzymandias_whenStartOz_thenReturnOz() {
+        var actual = warmupOneEightSet.startOz("ozymandias");
+        assertThat(actual)
+                .isEqualTo("oz");
+    }
+
+    @Test
+    void givenBzoo_whenStartOz_thenReturnZ() {
+        var actual = warmupOneEightSet.startOz("bzoo");
+        assertThat(actual)
+                .isEqualTo("z");
+    }
+
+    @Test
+    void givenOxx_whenStartOz_thenReturnO() {
+        var actual = warmupOneEightSet.startOz("oxx");
+        assertThat(actual)
+                .isEqualTo("o");
+    }
+
+    @Test
+    void givenA_whenStartOz_thenReturnEmptyString() {
+        var actual = warmupOneEightSet.startOz("a");
+        assertThat(actual)
+                .isEqualTo("");
+    }
+
+    @Test
+    void givenOunce_whenStartOz_thenReturnO() {
+        var actual = warmupOneEightSet.startOz("ounce");
+        assertThat(actual)
+                .isEqualTo("o");
+    }
+
+    @Test
+    void givenO_whenStartOz_thenReturnO() {
+        var actual = warmupOneEightSet.startOz("o");
+        assertThat(actual)
+                .isEqualTo("o");
+    }
+
+    @Test
+    void givenEmpty_whenStartOz_thenReturnEmpty() {
+        var actual = warmupOneEightSet.startOz("");
+        assertThat(actual)
+                .isEqualTo("");
+    }
 }

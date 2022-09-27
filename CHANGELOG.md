@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Warmup-1 delDel
 - Warmup-1 mixStart
+- Warmup-1 startOz
 
 ## [1.2.0] - 2022-09-26
 ### Added

@@ -16,4 +16,26 @@ public class WarmupOneEightSet {
 
         return str.substring(1, 3).equals("ix");
     }
+
+
+    /**
+     * Given a string, return a string made of the first 2 chars (if present), however include first
+     * char only if it is 'o' and include the second only if it is 'z', so "ozymandias" yields "oz".
+     *
+     * @param str
+     * @return
+     */
+    public String startOz(String str) {
+        String theWord = "";
+
+        if (str.length() >= 1 && str.charAt(0) == 'o') {
+            theWord += String.valueOf(str.charAt(0));
+        }
+
+        if (str.length() >= 2 && str.charAt(1) == 'z') {
+            theWord += String.valueOf(str.charAt(1));
+        }
+
+        return theWord;
+    }
 }
