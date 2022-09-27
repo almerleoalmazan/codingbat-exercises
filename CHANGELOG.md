@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 2022-09-27
+### Added
+- Warmup-1 delDel
+
 ## [1.2.0] - 2022-09-26
 ### Added
 - Warmup-1 icyHot
@@ -37,4 +41,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Add AssertJ for fluent and rich assertions in Java tests
-- Move unit test methods to other classes to minimize big and bulk codes in one class
+- Move unit test methods to other classes to minimize bulky unit test methods in one test class

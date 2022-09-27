@@ -1,7 +1,6 @@
 package warmup.one;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -95,10 +94,46 @@ public class WarmupOneSeventhSetTest {
     }
 
     @Test
-    @Disabled
     void givenNinetyNineAndNinetyNine_whenLoneTeen_thenReturnFalse() {
         var actual = warmupOneSeventhSet.loneTeen(99, 99);
         assertThat(actual)
                 .isFalse();
+    }
+    
+    
+    /** delDel */
+    @Test
+    void givenAdelbcString_whenDelDel_thenReturnAbcString() {
+        var actual = warmupOneSeventhSet.delDel("adelbc");
+        assertThat(actual)
+                .isEqualTo("abc");
+    }
+
+    @Test
+    void givenAdelHelloString_whenDelDel_thenReturnAHelloString() {
+        var actual = warmupOneSeventhSet.delDel("adelHello");
+        assertThat(actual)
+                .isEqualTo("aHello");
+    }
+
+    @Test
+    void givenAdedbcString_whenDelDel_thenReturnAdedbcString() {
+        var actual = warmupOneSeventhSet.delDel("adedbc");
+        assertThat(actual)
+                .isEqualTo("adedbc");
+    }
+
+    @Test
+    void givenA_whenDelDel_thenReturnA() {
+        var actual = warmupOneSeventhSet.delDel("a");
+        assertThat(actual)
+                .isEqualTo("a");
+    }
+
+    @Test
+    void givenEmptyString_whenDelDel_thenReturnEmptyString() {
+        var actual = warmupOneSeventhSet.delDel("");
+        assertThat(actual)
+                .isEqualTo("");
     }
 }

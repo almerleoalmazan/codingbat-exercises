@@ -38,4 +38,25 @@ public class WarmupOneSeventhSet {
 
         return b > 12 && b < 20 && !(a > 12 && a < 20);
     }
+
+    /**
+     * Given a string, if the string "del" appears starting at index 1, return a string where that
+     * "del" has been deleted. Otherwise, return the string unchanged.
+     *
+     * @param str
+     * @return String
+     */
+    public String delDel(String str) {
+        if (str.length() < 4) {
+            return str;
+        }
+
+        String delString = str.substring(1, 4);
+
+        if (delString.equals("del")) {
+            return str.charAt(0) + str.substring(4);
+        }
+
+        return str;
+    }
 }
