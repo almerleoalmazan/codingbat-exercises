@@ -38,4 +38,16 @@ public class WarmupOneEightSet {
 
         return theWord;
     }
+
+    /**
+     * Given three int values, a b c, return the largest.
+     *
+     * @param a
+     * @param b
+     * @param c
+     * @return int
+     */
+    public int intMax(int a, int b, int c) {
+        return Math.max(Math.max(a, b), c);
+    }
 }

@@ -99,4 +99,20 @@ public class WarmupOneEightSetTest {
         assertThat(actual)
                 .isEqualTo("");
     }
+
+
+    /** intMax */
+    @Test
+    void givenOneTwoThree_whenIntMax_thenReturnThree() {
+        var actual = warmupOneEightSet.intMax(1, 2, 3);
+        assertThat(actual)
+                .isEqualTo(3);
+    }
+
+    @Test
+    void givenNegativeThreeNegativeOneNegativeTwo_whenIntMax_thenReturnNegativeOne() {
+        var actual = warmupOneEightSet.intMax(-3, -1, -2);
+        assertThat(actual)
+                .isEqualTo(-1);
+    }
 }
