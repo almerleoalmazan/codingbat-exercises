@@ -35,4 +35,33 @@ public class WarmupOneTenthSetTest {
         assertThat(actual)
                 .isFalse();
     }
+
+    /* lastDigit */
+    @Test
+    void givenSevenAndSeventeen_whenLastDigit_thenReturnTrue() {
+        var actual = warmupOneTenthSet.lastDigit(7, 17);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenSixAndSeventeen_whenLastDigit_thenReturnFalse() {
+        var actual = warmupOneTenthSet.lastDigit(6, 17);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenThreeAndOneHundredThirteen_whenLastDigit_thenReturnTrue() {
+        var actual = warmupOneTenthSet.lastDigit(3, 113);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenTwentySevenAndFiftySeven_whenLastDigit_thenReturnTrue() {
+        var actual = warmupOneTenthSet.lastDigit(27, 57);
+        assertThat(actual)
+                .isTrue();
+    }
 }

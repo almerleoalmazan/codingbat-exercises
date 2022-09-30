@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Warmup-1 in3050
 - Warmup-1 max1020
 - Warmup-1 stringE
+- Warmup-1 lastDigit
 
 ## [1.5.0] - 2022-09-29
 ### Added
