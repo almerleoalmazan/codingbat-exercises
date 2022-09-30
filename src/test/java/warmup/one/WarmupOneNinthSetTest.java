@@ -34,4 +34,27 @@ public class WarmupOneNinthSetTest {
         assertThat(actual)
                 .isEqualTo(0);
     }
+
+
+    /** in3050 */
+    @Test
+    void givenThirtyAndThirtyOne_whenIn3050_thenReturnTrue() {
+        var actual = warmupOneNinthSet.in3050(30, 31);
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenThirtyAndFortyOne_whenIn3050_thenReturnFalse() {
+        var actual = warmupOneNinthSet.in3050(30, 41);
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenFortyAndFifty_whenIn3050_thenReturnTrue() {
+        var actual = warmupOneNinthSet.in3050(40, 50);
+        assertThat(actual)
+                .isTrue();
+    }
 }
