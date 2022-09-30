@@ -14,6 +14,7 @@ public class WarmupOneNinthSetTest {
         warmupOneNinthSet = new WarmupOneNinthSet();
     }
 
+    /* close10 */
     @Test
     void givenEightAndThirteen_whenClose10_thenReturnEight() {
         var actual = warmupOneNinthSet.close10(8, 13);
@@ -36,7 +37,7 @@ public class WarmupOneNinthSetTest {
     }
 
 
-    /** in3050 */
+    /* in3050 */
     @Test
     void givenThirtyAndThirtyOne_whenIn3050_thenReturnTrue() {
         var actual = warmupOneNinthSet.in3050(30, 31);
@@ -56,5 +57,41 @@ public class WarmupOneNinthSetTest {
         var actual = warmupOneNinthSet.in3050(40, 50);
         assertThat(actual)
                 .isTrue();
+    }
+
+    /* max1020 */
+    @Test
+    void givenElevenAndNineteen_whenMax1020_thenReturnNineteen() {
+        var actual = warmupOneNinthSet.max1020(11, 19);
+        assertThat(actual)
+                .isEqualTo(19);
+    }
+
+    @Test
+    void givenNineteenAndEleven_whenMax1020_thenReturnNineteen() {
+        var actual = warmupOneNinthSet.max1020(19, 11);
+        assertThat(actual)
+                .isEqualTo(19);
+    }
+
+    @Test
+    void givenElevenAndNine_whenMax1020_thenReturnEleven() {
+        var actual = warmupOneNinthSet.max1020(11, 9);
+        assertThat(actual)
+                .isEqualTo(11);
+    }
+
+    @Test
+    void givenTenAndTwentyOne_whenMax1020_thenReturnTen() {
+        var actual = warmupOneNinthSet.max1020(10, 21);
+        assertThat(actual)
+                .isEqualTo(10);
+    }
+
+    @Test
+    void givenTwentyOneAndTen_whenMax1020_thenReturnTen() {
+        var actual = warmupOneNinthSet.max1020(21, 10);
+        assertThat(actual)
+                .isEqualTo(10);
     }
 }

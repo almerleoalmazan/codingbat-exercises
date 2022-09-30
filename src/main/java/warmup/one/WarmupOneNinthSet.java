@@ -38,4 +38,32 @@ public class WarmupOneNinthSet {
         return isAInTheRangeOf30To40 && isBInTheRangeOf30To40
                 || isAInTheRangeOf40To50 && isBInTheRangeOf40To50;
     }
+
+
+    /**
+     * Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or
+     * return 0 if neither is in the range.
+     *
+     * @param a
+     * @param b
+     * @return
+     */
+    public int max1020(int a, int b) {
+        boolean inRangeOfA = a >= 10 && a <= 20;
+        boolean inRangeOfB = b >= 10 && b <= 20;
+
+        if (inRangeOfA && inRangeOfB) {
+            return Math.max(a, b);
+        }
+
+        if (inRangeOfA) {
+            return a;
+        }
+
+        if (inRangeOfB) {
+            return b;
+        }
+
+        return 0;
+    }
 }
