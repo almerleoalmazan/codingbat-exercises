@@ -64,4 +64,26 @@ public class WarmupOneTenthSetTest {
         assertThat(actual)
                 .isTrue();
     }
+
+    /* endUp */
+    @Test
+    void givenHello_whenEndUp_thenReturnHeLLO() {
+        var actual = warmupOneTenthSet.endUp("Hello");
+        assertThat(actual)
+                .isEqualTo("HeLLO");
+    }
+
+    @Test
+    void givenHiThere_whenEndUp_thenReturnHithERE() {
+        var actual = warmupOneTenthSet.endUp("hi there");
+        assertThat(actual)
+                .isEqualTo("hi thERE");
+    }
+
+    @Test
+    void givenHi_whenEndUp_thenReturnHI() {
+        var actual = warmupOneTenthSet.endUp("hi");
+        assertThat(actual)
+                .isEqualTo("HI");
+    }
 }
