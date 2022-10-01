@@ -6,7 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.6.0] - 2022-09-30
+## [1.0.8] - 2022-10-01
+- Warmup-1 everyNth
+
+### Changed
+- Revised versioning
+
+## [1.0.7] - 2022-09-30
 ### Added
 - Warmup-1 in3050
 - Warmup-1 max1020
@@ -14,28 +20,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Warmup-1 lastDigit
 - Warmup-1 endUp
 
-## [1.5.0] - 2022-09-29
+## [1.0.6] - 2022-09-29
 ### Added
 - Warmup-1 close10
 
-## [1.4.0] - 2022-09-28
+## [1.0.5] - 2022-09-28
 ### Added
 - Warmup-1 intMax
 
-## [1.3.0] - 2022-09-27
+## [1.0.4] - 2022-09-27
 ### Added
 - Warmup-1 delDel
 - Warmup-1 mixStart
 - Warmup-1 startOz
 
-## [1.2.0] - 2022-09-26
+## [1.0.3] - 2022-09-26
 ### Added
 - Warmup-1 icyHot
 - Warmup-1 in1020
 - Warmup-1 hasTeen
 - Warmup-1 loneTeen
  
-## [1.1.0] - 2022-09-25
+## [1.0.2] - 2022-09-25
 ### Added
 - Warmup-1 missingChar
 - Warmup-1 frontBack
@@ -45,7 +51,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Warmup-1 front22
 - Warmup-1 startHi
 
-## [1.0.0] - 2022-09-24
+## [1.0.1] - 2022-09-24
 ### Added
 - Warmup-1 sleepIn
 - Warmup-1 monkeyTrouble

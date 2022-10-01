@@ -86,4 +86,26 @@ public class WarmupOneTenthSetTest {
         assertThat(actual)
                 .isEqualTo("HI");
     }
+
+    /* everyNth */
+    @Test
+    void givenMiracleAndTwo_whenEveryNth_thenReturnMrce() {
+        var actual = warmupOneTenthSet.everyNth("Miracle", 2);
+        assertThat(actual)
+                .isEqualTo("Mrce");
+    }
+
+    @Test
+    void givenAbcdefgAndTwo_whenEveryNth_thenReturnAceg() {
+        var actual = warmupOneTenthSet.everyNth("abcdefg", 2);
+        assertThat(actual)
+                .isEqualTo("aceg");
+    }
+
+    @Test
+    void givenAbcdefgAndThree_whenEveryNth_thenReturnAdg() {
+        var actual = warmupOneTenthSet.everyNth("abcdefg", 3);
+        assertThat(actual)
+                .isEqualTo("adg");
+    }
 }
