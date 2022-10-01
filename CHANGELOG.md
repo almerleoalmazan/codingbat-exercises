@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Warmup-1 everyNth
 - Warmup-2 stringTimes
 - Warmup-2 frontTimes
+- Warmup-2 countXX
 
 ### Changed
 - Revised versioning

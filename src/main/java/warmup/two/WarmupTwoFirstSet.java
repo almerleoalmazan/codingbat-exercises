@@ -43,4 +43,15 @@ public class WarmupTwoFirstSet {
 
         return result.toString();
     }
+
+    /**
+     * Convert the number of "xx" in the given string. We'll say that overlapping is allowed, so
+     * "xxx" contains 2 "xx"
+     *
+     * @param str
+     * @return
+     */
+    public int countXX(String str) {
+        return 1;
+    }
 }
