@@ -35,4 +35,33 @@ public class WarmupTwoFirstSetTest {
         assertThat(actual)
                 .isEqualTo("Hi");
     }
+
+    /* frontTimes */
+    @Test
+    void givenChocolateAndTwo_whenFrontTimes_thenReturnChoCho() {
+        var actual = warmupTwoFirstSet.frontTimes("Chocolate", 2);
+        assertThat(actual)
+                .isEqualTo("ChoCho");
+    }
+
+    @Test
+    void givenChocolateAndThree_whenFrontTimes_thenReturnChoChoCho() {
+        var actual = warmupTwoFirstSet.frontTimes("Chocolate", 3);
+        assertThat(actual)
+                .isEqualTo("ChoChoCho");
+    }
+
+    @Test
+    void givenAbcAndThree_whenFrontTimes_thenReturnAbcAbcAbc() {
+        var actual = warmupTwoFirstSet.frontTimes("Abc", 3);
+        assertThat(actual)
+                .isEqualTo("AbcAbcAbc");
+    }
+
+    @Test
+    void givenAbAndFour_whenFrontTimes_thenReturnAbAbAbAb() {
+        var actual = warmupTwoFirstSet.frontTimes("Ab", 4);
+        assertThat(actual)
+                .isEqualTo("AbAbAbAb");
+    }
 }
