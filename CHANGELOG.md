@@ -6,11 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.9] - 2022-10-03
+### Added
+- Warmup-2 countXX
+
 ## [1.0.8] - 2022-10-01
+### Added
 - Warmup-1 everyNth
 - Warmup-2 stringTimes
 - Warmup-2 frontTimes
-- Warmup-2 countXX
 
 ### Changed
 - Revised versioning
