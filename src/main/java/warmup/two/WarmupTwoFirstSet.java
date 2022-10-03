@@ -62,4 +62,25 @@ public class WarmupTwoFirstSet {
 
         return count;
     }
+
+    /**
+     * Given a string, return true if the first instance of "x" in the string is immediately followed
+     * by another "x".
+     *
+     * @param str
+     * @return
+     */
+    public boolean doubleX(String str) {
+        for (int i = 0; i < str.length()-1; i++) {
+            if (str.charAt(i) != 'x') {
+               continue;
+            }
+
+            if (str.charAt(i) == 'x') {
+                return str.charAt(i + 1) == 'x';
+            }
+        }
+
+        return false;
+    }
 }

@@ -86,4 +86,33 @@ public class WarmupTwoFirstSetTest {
         assertThat(actual)
                 .isEqualTo(3);
     }
+
+    /* doubleX */
+    @Test
+    void givenAxxbb_whenDoubleX_thenReturnTrue() {
+        var actual = warmupTwoFirstSet.doubleX("axxbb");
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenAxaxax_whenDoubleX_thenReturnFalse() {
+        var actual = warmupTwoFirstSet.doubleX("axaxax");
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenXxxxx_whenDoubleX_thenReturnTrue() {
+        var actual = warmupTwoFirstSet.doubleX("xxxxx");
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenXaxxx_whenDoubleX_thenReturnFalse() {
+        var actual = warmupTwoFirstSet.doubleX("xaxxx");
+        assertThat(actual)
+                .isFalse();
+    }
 }
