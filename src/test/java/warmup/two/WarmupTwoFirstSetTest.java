@@ -64,4 +64,26 @@ public class WarmupTwoFirstSetTest {
         assertThat(actual)
                 .isEqualTo("AbAbAbAb");
     }
+
+    /* countXX */
+    @Test
+    void givenAbcxx_whenCountXX_thenReturnOne() {
+        var actual = warmupTwoFirstSet.countXX("abcxx");
+        assertThat(actual)
+                .isEqualTo(1);
+    }
+
+    @Test
+    void givenXxx_whenCountXX_thenReturnTwo() {
+        var actual = warmupTwoFirstSet.countXX("xxx");
+        assertThat(actual)
+                .isEqualTo(2);
+    }
+
+    @Test
+    void givenXxxx_whenCountXX_thenReturnThree() {
+        var actual = warmupTwoFirstSet.countXX("xxxx");
+        assertThat(actual)
+                .isEqualTo(3);
+    }
 }
