@@ -2,7 +2,6 @@ package warmup.two;
 
 public class WarmupTwoFirstSet {
 
-
     /**
      * Given a string and a non-negative int n, return a larger string that is n copies of the
      * original string.
@@ -82,5 +81,24 @@ public class WarmupTwoFirstSet {
         }
 
         return false;
+    }
+
+    /**
+     * Given a string, return a new string made of every other char starting with the first, so
+     * "Hello" yields "Hlo".
+     *
+     * @param str
+     * @return
+     */
+    public String stringBits(String str) {
+        String newStr = "";
+        for (int i = 0; i < str.length(); i++) {
+            if (i % 2 != 0) {
+                continue;
+            }
+            newStr += str.charAt(i);
+        }
+
+        return newStr;
     }
 }

@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.10] - 2022-10-05
+### Added
+- Warmup-2 stringBits
+
 ## [1.0.9] - 2022-10-03
 ### Added
 - Warmup-2 countXX

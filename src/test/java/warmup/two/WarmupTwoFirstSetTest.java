@@ -115,4 +115,26 @@ public class WarmupTwoFirstSetTest {
         assertThat(actual)
                 .isFalse();
     }
+
+    /* stringBits */
+    @Test
+    void givenHello_whenStringBits_thenReturnHlo() {
+        var actual = warmupTwoFirstSet.stringBits("Hello");
+        assertThat(actual)
+                .isEqualTo("Hlo");
+    }
+
+    @Test
+    void givenHi_whenStringBits_thenReturnH() {
+        var actual = warmupTwoFirstSet.stringBits("Hi");
+        assertThat(actual)
+                .isEqualTo("H");
+    }
+
+    @Test
+    void givenHeeololeo_whenStringBits_thenReturnHello() {
+        var actual = warmupTwoFirstSet.stringBits("Heeololeo");
+        assertThat(actual)
+                .isEqualTo("Hello");
+    }
 }
