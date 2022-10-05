@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Warmup-2 stringBits
 - Warmup-2 stringSplosion
 - Warmup-2 arrayCount9
+- Warmup-2 arrayFront9
 
 ## [1.0.9] - 2022-10-03
 ### Added
