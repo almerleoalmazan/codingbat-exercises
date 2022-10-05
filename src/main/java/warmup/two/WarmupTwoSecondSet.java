@@ -20,4 +20,22 @@ public class WarmupTwoSecondSet {
 
         return modifiedString;
     }
+
+    /**
+     * Given an array of ints, return the number of 9's in the array.
+     *
+     * @param nums
+     * @return
+     */
+    public int arrayCount9(int[] nums) {
+        int count = 0;
+
+        for (int num : nums) {
+            if (num == 9) {
+                count++;
+            }
+        }
+
+        return count;
+    }
 }

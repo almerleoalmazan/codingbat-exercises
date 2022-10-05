@@ -35,4 +35,26 @@ public class WarmupTwoSecondSetTest {
         assertThat(actual)
                 .isEqualTo("aab");
     }
+
+    /* arrayCount9 */
+    @Test
+    void givenOneTwoNine_whenArrayCount9_thenReturnOne() {
+        var actual = warmupTwoSecondSet.arrayCount9(new int[]{1, 2, 9});
+        assertThat(actual)
+                .isEqualTo(1);
+    }
+
+    @Test
+    void givenOneNineNine_whenArrayCount9_thenReturnTwo() {
+        var actual = warmupTwoSecondSet.arrayCount9(new int[]{1, 9, 9});
+        assertThat(actual)
+                .isEqualTo(2);
+    }
+
+    @Test
+    void givenOneNineNineThreeNine_whenArrayCount9_thenReturnThree() {
+        var actual = warmupTwoSecondSet.arrayCount9(new int[]{1, 9, 9, 3, 9});
+        assertThat(actual)
+                .isEqualTo(3);
+    }
 }
