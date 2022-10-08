@@ -86,4 +86,27 @@ public class WarmupTwoSecondSetTest {
         assertThat(actual)
                 .isFalse();
     }
+
+    /* array123 */
+
+    @Test
+    void givenOneOneTwoThreeOne_whenArray123_thenReturnTrue() {
+        var actual = warmupTwoSecondSet.array123(new int[]{1, 1, 2, 3, 1});
+        assertThat(actual)
+                .isTrue();
+    }
+
+    @Test
+    void givenOneOneTwoFourOne_whenArray123_thenReturnFalse() {
+        var actual = warmupTwoSecondSet.array123(new int[]{1, 1, 2, 4, 1});
+        assertThat(actual)
+                .isFalse();
+    }
+
+    @Test
+    void givenOneOneTwoOneTwoThree_whenArray123_thenReturnTrue() {
+        var actual = warmupTwoSecondSet.array123(new int[]{1, 1, 2, 1, 2, 3});
+        assertThat(actual)
+                .isTrue();
+    }
 }
