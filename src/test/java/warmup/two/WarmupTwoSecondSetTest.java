@@ -109,4 +109,26 @@ public class WarmupTwoSecondSetTest {
         assertThat(actual)
                 .isTrue();
     }
+    
+    /* stringMatch */
+    @Test
+    void givenStringOfXxcaazzAndXxbaaz_whenStringMatch_thenReturnThree() {
+        var actual = warmupTwoSecondSet.stringMatch("xxcaazz", "xxbaaz");
+        assertThat(actual)
+                .isEqualTo(3);
+    }
+
+    @Test
+    void givenStringOfAbcAndAbc_whenStringMatch_thenReturnTwo() {
+        var actual = warmupTwoSecondSet.stringMatch("abc", "abc");
+        assertThat(actual)
+                .isEqualTo(2);
+    }
+
+    @Test
+    void givenStringOfAbcAndAxc_whenStringMatch_thenReturnZero() {
+        var actual = warmupTwoSecondSet.stringMatch("abc", "axc");
+        assertThat(actual)
+                .isEqualTo(0);
+    }
 }

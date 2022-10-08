@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.12] - 2022-10-09
+### Added
+- Warmup-2 stringMatch
+
 ## [1.0.11] - 2022-10-08
 ### Added
 - Warmup-2 array123
